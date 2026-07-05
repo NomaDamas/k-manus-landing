@@ -1,0 +1,106 @@
+/**
+ * K-manus landing design tokens.
+ *
+ * Mirrors the token set defined in `apps/desktop/src/styles/tokens.css` of the
+ * main k-manus repo, adapted for a public marketing/legal site: tokens live
+ * on `:root` (not scoped to a `[data-km]` app shell), and the accent is fixed
+ * to "jjok" (쪽빛 blue), the brand's primary public-facing accent. Theme
+ * still follows the visitor's OS preference, with a manual override via
+ * `data-theme` on <html> (see components/ThemeToggle.tsx) so the cascade
+ * does the work without extra JS reflow.
+ *
+ * Shared across every page in this repo (home, pricing, legal, business
+ * info) — import `./tokens.css` once from the root layout and reuse the
+ * custom properties below. Do not fork a second copy of this file; extend it
+ * here so #2 (pricing) and #3-#7 (legal/docs) stay visually consistent.
+ */
+
+:root {
+  --desk: linear-gradient(160deg, #dfe5ee 0%, #c9d3e1 100%);
+  --win: #ffffff;
+  --surface: #ffffff;
+  --sunken: #f2f4f6;
+  --text: #191f28;
+  --sub: #4e5968;
+  --faint: #8b95a1;
+  --line: #e7eaee;
+  --hover: rgba(15, 30, 60, 0.05);
+
+  --acc: #3554d1;
+  --acc-fg: #ffffff;
+  --acc-soft: color-mix(in srgb, var(--acc) 9%, transparent);
+
+  /* Brand accent palette (design tokens), available for callouts /
+     illustrative accents even though the primary UI accent is jjok. */
+  --acc-ink: #191f28;
+  --acc-jjok: #3554d1;
+  --acc-dan: #c4482f;
+  --acc-cheongja: #0e8a6c;
+
+  --risk-low: #0e8a6c;
+  --risk-medium: #b3791a;
+  --risk-high: #c4482f;
+
+  --font-sans:
+    "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont,
+    "SF Pro", "Helvetica Neue", sans-serif;
+
+  --container: 1120px;
+  --radius-sm: 8px;
+  --radius-md: 14px;
+  --radius-lg: 22px;
+
+  color-scheme: light;
+}
+
+:root[data-theme="dark"] {
+  --desk: linear-gradient(160deg, #23252e 0%, #101218 100%);
+  --win: #1c1d24;
+  --surface: #24252c;
+  --sunken: #2a2b33;
+  --text: #ecedef;
+  --sub: #a6aab4;
+  --faint: #6e7380;
+  --line: #2f3039;
+  --hover: rgba(255, 255, 255, 0.06);
+
+  --acc: #7189ff;
+  --acc-fg: #10121a;
+  --acc-ink: #f2f3f6;
+  --acc-jjok: #7189ff;
+  --acc-dan: #f08268;
+  --acc-cheongja: #48c6a6;
+
+  --risk-low: #48c6a6;
+  --risk-medium: #e0ab4a;
+  --risk-high: #f08268;
+
+  color-scheme: dark;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --desk: linear-gradient(160deg, #23252e 0%, #101218 100%);
+    --win: #1c1d24;
+    --surface: #24252c;
+    --sunken: #2a2b33;
+    --text: #ecedef;
+    --sub: #a6aab4;
+    --faint: #6e7380;
+    --line: #2f3039;
+    --hover: rgba(255, 255, 255, 0.06);
+
+    --acc: #7189ff;
+    --acc-fg: #10121a;
+    --acc-ink: #f2f3f6;
+    --acc-jjok: #7189ff;
+    --acc-dan: #f08268;
+    --acc-cheongja: #48c6a6;
+
+    --risk-low: #48c6a6;
+    --risk-medium: #e0ab4a;
+    --risk-high: #f08268;
+
+    color-scheme: dark;
+  }
+}
