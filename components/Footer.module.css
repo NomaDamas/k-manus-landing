@@ -66,6 +66,52 @@
   color: var(--text);
 }
 
+.bizDisclosure {
+  border-top: 1px solid var(--line);
+  padding-top: 24px;
+}
+
+.bizList {
+  list-style: none;
+  margin: 0 0 10px;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px 18px;
+}
+
+.bizList li {
+  font-size: 12px;
+  line-height: 1.6;
+  color: var(--faint);
+  white-space: nowrap;
+}
+
+.bizLabel {
+  font-weight: 600;
+  color: var(--sub);
+  margin-right: 4px;
+}
+
+.bizValue {
+  color: var(--faint);
+}
+
+.bizNote {
+  margin: 0;
+  font-size: 12px;
+  color: var(--faint);
+}
+
+.bizNote a {
+  color: var(--sub);
+  text-decoration: underline;
+}
+
+.bizNote a:hover {
+  color: var(--text);
+}
+
 .bottom {
   border-top: 1px solid var(--line);
   padding-top: 24px;
