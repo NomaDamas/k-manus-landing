@@ -26,7 +26,7 @@ application.
 ```
 k-manus-landing
 ├── Landing (home)            -> app/page.tsx
-├── Pricing                   -> content/pricing/        (rendered by app/pricing/, issue #2)
+├── Pricing                   -> content/pricing/        (rendered by app/pricing/)
 ├── Terms of Service          -> content/legal/terms/     (rendered by app/legal/terms/, issue #3)
 ├── Privacy Policy            -> content/legal/privacy/   (rendered by app/legal/privacy/, issue #4)
 ├── Refund Policy             -> content/legal/refund/    (rendered by app/legal/refund/, issue #5)
@@ -71,6 +71,17 @@ pnpm dev      # http://localhost:3000
 pnpm lint
 pnpm build    # static export to out/ (next.config.ts sets output: "export")
 ```
+
+## Pricing page (`app/pricing/`)
+
+`app/pricing/` is a Next.js (App Router) route implementing the public
+pricing page: Free / Personal / Pro / Team plan cards, a monthly/annual
+billing toggle, a feature comparison table, and an FAQ. Plan data lives in
+`lib/pricing-plans.ts` and is kept conceptually aligned with the plan catalog
+in `k-manus-cloud/packages/subscription/src/plans.ts` (plan ids, K-credit
+grants, feature flags). KRW prices are placeholder example values only —
+clearly labeled as such in the UI — pending a finalized PortOne/Stripe price
+list.
 
 ## Licensing
 
