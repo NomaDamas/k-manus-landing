@@ -20,6 +20,7 @@ application.
 | `content/legal/refund/` | Refund Policy. |
 | `content/business-info/` | Company identity, contact, and jurisdiction info. |
 | `content/pg-review-assets/` | Payment gateway onboarding review materials (confidential). |
+| `docs/pg-submission/` | PG review submission checklist and supporting docs (payment flow, test-account instructions, required site disclosures). See [`docs/pg-submission/README.md`](./docs/pg-submission/README.md). |
 
 ## Page Map
 
@@ -33,8 +34,9 @@ k-manus-landing
 └── Business Information      -> content/business-info/   (rendered by app/business-info/)
 ```
 
-PG review assets under `content/pg-review-assets/` are operational onboarding
-materials and are not part of the public page map.
+PG review assets under `content/pg-review-assets/` and the submission bundle
+under `docs/pg-submission/` are operational onboarding materials and are not
+part of the public page map.
 
 ## Shared design system
 

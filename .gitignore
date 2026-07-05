@@ -37,3 +37,9 @@ Thumbs.db
 secrets/
 *.key
 *.pem
+
+# PG review confidential assets — never commit the actual files
+# (screenshots, PDFs, registration numbers) to this public repo.
+# The manifest README that documents them stays tracked.
+content/pg-review-assets/*
+!content/pg-review-assets/README.md
