@@ -1,10 +1,14 @@
 # PG Review Assets — Manifest
 
-**Confidential.** This directory holds the actual files (screenshots, PDFs,
-signed forms) submitted to a payment gateway during onboarding review. It is
-operational material, not public marketing content — see
-[`CONTENT-LICENSE.md`](../../CONTENT-LICENSE.md) and
-[`AGENTS.md`](../../AGENTS.md#pg-review-assets).
+**Confidential.** This directory is the local working location for the
+actual files (screenshots, PDFs, signed forms) submitted to a payment
+gateway during onboarding review. It is operational material, not public
+marketing content — see [`CONTENT-LICENSE.md`](../../CONTENT-LICENSE.md) and
+[`AGENTS.md`](../../AGENTS.md#pg-review-assets). This repository is
+**public**: the real files must never be committed to git. `.gitignore`
+excludes everything in this directory except this README as a backstop, but
+do not rely on that alone — treat "never commit these to this repo" as the
+rule, not the gitignore entry.
 
 This README is the manifest: it lists every file this directory is expected
 to contain, where each one comes from, and its current status. The narrative
@@ -38,13 +42,15 @@ below (e.g. `01-landing-home.png`, `05-refund-policy.pdf`).
    [`docs/pg-submission/checklist.md`](../../docs/pg-submission/checklist.md)
    is unblocked (its source route is live, or the source document exists).
 2. Capture the asset following the naming convention above.
-3. Drop the file into this directory.
+3. Drop the file into this directory locally (`.gitignore` keeps it out of
+   git; do not force-add it).
 4. Update the Status column in this table to `captured (YYYY-MM-DD)`.
 5. Check off the matching item in `checklist.md`.
 
 ## Handling
 
 - Do not publish these assets outside the PG review workflow.
-- Do not commit real sandbox credentials, customer data, or unredacted
-  registration numbers/PII into this directory beyond what the target PG
-  explicitly requires for review.
+- Never commit real sandbox credentials, customer data, or registration
+  numbers/PII to this repository — this directory is a local staging area
+  only; the actual files travel to the PG via the submission package, not
+  via git.

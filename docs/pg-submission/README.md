@@ -66,9 +66,16 @@ part of this bundle.
 2. Walk [`checklist.md`](./checklist.md) top to bottom, checking off each item
    as its live URL or asset is verified.
 3. Capture the screenshots and documents listed in
-   [`content/pg-review-assets/README.md`](../../content/pg-review-assets/README.md)
-   and place them in that directory (they are gitignored from public
-   distribution per `CONTENT-LICENSE.md` — confidential, PG-eyes-only).
+   [`content/pg-review-assets/README.md`](../../content/pg-review-assets/README.md).
+   These are confidential, PG-eyes-only files (business registration
+   numbers, checkout screenshots, signed forms) and this repository is
+   **public** — do **not** commit the actual files to git. `.gitignore`
+   excludes `content/pg-review-assets/*` (other than that directory's
+   manifest README) as a backstop, but treat that as defense-in-depth, not
+   the primary control: store the real files in a secure location outside
+   this repo and only track the manifest/status here, the same way
+   [`test-account.md`](./test-account.md) handles filled-in sandbox
+   credentials.
 4. Package the checked-off `checklist.md`, the narrative docs in this folder,
    and the assets directory into the submission format the target PG
    requires (portal upload, email, or partner-manager handoff).
