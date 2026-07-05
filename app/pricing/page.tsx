@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import { Container } from "@/components/Container";
 import { PricingSection } from "@/components/pricing/PricingSection";
 import { ComparisonTable } from "@/components/pricing/ComparisonTable";
@@ -80,9 +81,9 @@ export default function PricingPage() {
             도입을 검토 중이라면 영업팀에 문의해 주세요.
           </p>
           <div className={styles.ctaActions}>
-            <a href="/#download" className={styles.ctaPrimary}>
+            <Link href="/#download" className={styles.ctaPrimary}>
               무료로 시작하기
-            </a>
+            </Link>
             <a href="mailto:sales@k-manus.ai" className={styles.ctaSecondary}>
               영업팀에 문의
             </a>
