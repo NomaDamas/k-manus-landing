@@ -1,13 +1,13 @@
 /**
- * K-manus business (사업자) identity, jurisdiction, and customer-support
+ * 돌쇠 business (사업자) identity, jurisdiction, and customer-support
  * contact information.
  *
- * Source: K-manus preparation plan pending-approval.md section 7, item
+ * Source: 돌쇠 preparation plan pending-approval.md section 7, item
  * "[docs] Business info and customer support contact page" (issue #6).
  *
  * STATUS: pre-launch draft. NomaDamas has not yet completed 사업자등록
  * (business registration) or 통신판매업 신고 (mail-order-sales
- * registration) for the K-manus product line as a standalone commercial
+ * registration) for the 돌쇠 product line as a standalone commercial
  * offering, so every value below marked `placeholder: true` is a
  * structural stand-in, not a real registered value. Every such field MUST
  * be replaced with the operator's actual registered information before
@@ -51,7 +51,7 @@ export const businessInfo = {
   /** "draft" renders the pre-launch placeholder banner; "final" hides it. */
   status: "draft" as const,
   summary:
-    "「전자상거래 등에서의 소비자보호에 관한 법률」 등 관계 법령에 따라 K-manus 서비스를 제공하는 사업자의 신원, 소재지, 연락처 및 고객센터 이용 안내를 게시합니다. 이 페이지의 굵게 표시된 항목은 아직 실제 등록 정보로 채워지지 않은 자리표시자(placeholder)입니다.",
+    "「전자상거래 등에서의 소비자보호에 관한 법률」 등 관계 법령에 따라 돌쇠 서비스를 제공하는 사업자의 신원, 소재지, 연락처 및 고객센터 이용 안내를 게시합니다. 이 페이지의 굵게 표시된 항목은 아직 실제 등록 정보로 채워지지 않은 자리표시자(placeholder)입니다.",
 
   groups: [
     {
@@ -112,7 +112,7 @@ export const businessInfo = {
         },
         {
           label: "이메일",
-          value: "contact@k-manus.ai (placeholder — 도메인/메일함 확정 후 갱신)",
+          value: "contact@dolshoi.com (placeholder — 메일함 개설 후 갱신; 도메인은 dolshoi.com 확정)",
           placeholder: true,
           helpText:
             "실제로 수신·응대 가능한 대표 이메일 주소로 교체하고, 해당 메일함이 실제로 개설되어 있는지 확인.",
@@ -142,7 +142,7 @@ export const businessInfo = {
         },
         {
           label: "이메일",
-          value: "privacy@k-manus.ai (placeholder — 도메인/메일함 확정 후 갱신)",
+          value: "privacy@dolshoi.com (placeholder — 메일함 개설 후 갱신; 도메인은 dolshoi.com 확정)",
           placeholder: true,
           helpText: "실제로 수신·응대 가능한 개인정보 문의 전용 메일 주소로 교체.",
         },
@@ -177,11 +177,11 @@ export const businessInfo = {
       {
         id: "email",
         label: "고객센터 이메일",
-        value: "support@k-manus.ai",
-        href: "mailto:support@k-manus.ai",
+        value: "support@dolshoi.com",
+        href: "mailto:support@dolshoi.com",
         placeholder: true,
         helpText:
-          "실제로 모니터링되는 지원 메일함으로 교체(또는 개설) 확인 후 게시. 결제/환불 문의는 환불정책(제7조)의 billing@k-manus.ai와 창구를 일원화할지 결정 필요.",
+          "실제로 모니터링되는 지원 메일함으로 교체(또는 개설) 확인 후 게시. 결제/환불 문의는 환불정책(제7조)의 billing@dolshoi.com와 창구를 일원화할지 결정 필요.",
       },
       {
         id: "support-form",

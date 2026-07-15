@@ -1,8 +1,8 @@
 {
-  "name": "k-manus-landing",
+  "name": "dolshoi-landing",
   "private": true,
   "version": "0.0.0",
-  "description": "Public marketing landing page + legal content site for K-manus (NomaDamas).",
+  "description": "Public marketing landing page + legal content site for Dolshoi (NomaDamas).",
   "engines": {
     "node": ">=22"
   },

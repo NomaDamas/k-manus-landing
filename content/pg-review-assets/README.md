@@ -25,12 +25,12 @@ below (e.g. `01-landing-home.png`, `05-refund-policy.pdf`).
 
 | File | Source | Status |
 | --- | --- | --- |
-| `01-landing-home.png` | Screenshot of `/` (home) | pending — blocked on [#1](https://github.com/NomaDamas/k-manus-landing/issues/1) |
-| `02-pricing.png` | Screenshot of `/pricing`, all tiers visible | pending — blocked on [#2](https://github.com/NomaDamas/k-manus-landing/issues/2) |
-| `03-terms-of-service.pdf` | Rendered/exported `/legal/terms` | pending — blocked on [#3](https://github.com/NomaDamas/k-manus-landing/issues/3) |
-| `04-privacy-policy.pdf` | Rendered/exported `/legal/privacy` | pending — blocked on [#4](https://github.com/NomaDamas/k-manus-landing/issues/4) |
-| `05-refund-policy.pdf` | Rendered/exported `/legal/refund` | pending — blocked on [#5](https://github.com/NomaDamas/k-manus-landing/issues/5) |
-| `06-business-info.png` | Screenshot of `/business-info` | pending — blocked on [#6](https://github.com/NomaDamas/k-manus-landing/issues/6) |
+| `01-landing-home.png` | Screenshot of `/` (home) | pending — blocked on [#1](https://github.com/NomaDamas/dolshoi-landing/issues/1) |
+| `02-pricing.png` | Screenshot of `/pricing`, all tiers visible | pending — blocked on [#2](https://github.com/NomaDamas/dolshoi-landing/issues/2) |
+| `03-terms-of-service.pdf` | Rendered/exported `/legal/terms` | pending — blocked on [#3](https://github.com/NomaDamas/dolshoi-landing/issues/3) |
+| `04-privacy-policy.pdf` | Rendered/exported `/legal/privacy` | pending — blocked on [#4](https://github.com/NomaDamas/dolshoi-landing/issues/4) |
+| `05-refund-policy.pdf` | Rendered/exported `/legal/refund` | pending — blocked on [#5](https://github.com/NomaDamas/dolshoi-landing/issues/5) |
+| `06-business-info.png` | Screenshot of `/business-info` | pending — blocked on [#6](https://github.com/NomaDamas/dolshoi-landing/issues/6) |
 | `07-business-registration-certificate.pdf` | Business registration certificate (사업자등록증) | pending — sourced from company records, not this repo |
 | `08-mail-order-sales-registration.pdf` | Mail-order sales registration (통신판매업 신고증), if applicable | pending — sourced from company records, not this repo |
 | `09-payment-flow-diagram.png` | Exported diagram matching [`docs/pg-submission/payment-flow.md`](../../docs/pg-submission/payment-flow.md) | pending — export once payment-flow doc is final |

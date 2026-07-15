@@ -39,7 +39,7 @@ export default function OpengraphImage() {
             K
           </div>
           <div style={{ fontSize: 34, fontWeight: 700, color: "#191F28" }}>
-            K-manus
+            Dolshoi
           </div>
         </div>
 

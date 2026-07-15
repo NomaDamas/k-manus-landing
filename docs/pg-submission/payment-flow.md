@@ -1,7 +1,7 @@
 # Payment Flow Description
 
 This document is the plain-language payment flow narrative a PG reviewer
-reads alongside the [checklist](./checklist.md). It describes what K-manus
+reads alongside the [checklist](./checklist.md). It describes what Dolshoi
 sells, how a charge is initiated, and how it is confirmed and reconciled. It
 intentionally avoids internal implementation detail (service names, code
 paths) that a PG reviewer does not need — it describes the *customer-visible*
@@ -9,9 +9,9 @@ and *settlement-relevant* flow only.
 
 ## What is being sold
 
-K-manus is a desktop AI-agent application. Customers pay for one of two
+Dolshoi is a desktop AI-agent application. Customers pay for one of two
 things, both shown on the Pricing page (`/pricing`, tracked by
-[#2](https://github.com/NomaDamas/k-manus-landing/issues/2)):
+[#2](https://github.com/NomaDamas/dolshoi-landing/issues/2)):
 
 1. **A subscription tier** (Free, Personal, Pro, Team) — recurring billing,
    monthly or annual, that unlocks product features and a monthly allotment
@@ -69,7 +69,7 @@ customers may be billed in USD.
 
 ## Two supported payment rails
 
-K-manus supports charging through more than one processor behind a single
+Dolshoi supports charging through more than one processor behind a single
 internal payment abstraction, so the customer-facing flow above is identical
 regardless of which rail actually settles the charge:
 

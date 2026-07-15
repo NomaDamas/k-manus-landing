@@ -11,7 +11,7 @@ function PlaceholderBanner() {
         사업자 정보 미기재 / Pre-launch placeholder
       </strong>
       <p className={styles.bannerBody}>
-        NomaDamas는 아직 K-manus 서비스 운영을 위한 사업자등록 및
+        NomaDamas는 아직 Dolshoi 서비스 운영을 위한 사업자등록 및
         통신판매업 신고를 완료하지 않았습니다. 아래에서 &ldquo;placeholder&rdquo;
         표시가 붙은 항목은 실제 등록 정보가 아니며, 실 결제를 개시하기
         전에 반드시 실제 값으로 교체해야 합니다. 교체 대상 목록은

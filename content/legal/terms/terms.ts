@@ -1,27 +1,27 @@
 import type { LegalDocumentContent } from "@/components/legal/LegalDocument";
 
 /**
- * K-manus Terms of Service (draft).
+ * 돌쇠 Terms of Service (draft).
  *
  * 검토 필요 / DRAFT -- not legal advice. This content has not been reviewed
  * by counsel and must not be treated as a final, binding agreement until a
  * licensed Korean attorney signs off (see `status: "draft"` below, which
  * drives the banner rendered by `LegalDocument`).
  *
- * Source: K-manus preparation plan pending-approval.md section 7, item
+ * Source: 돌쇠 preparation plan pending-approval.md section 7, item
  * "[docs] Terms of service draft" (issue #3). Payment terms intentionally
  * defer refund mechanics to the Refund Policy (issue #5) rather than
  * duplicating them here.
  */
 export const termsOfService: LegalDocumentContent = {
-  title: "K-manus 이용약관",
+  title: "돌쇠 이용약관",
   documentId: "terms-of-service",
   version: "0.1.0-draft",
   effectiveDate: "미정 (법무 검토 후 확정)",
   lastUpdated: "2026-07-05",
   status: "draft",
   summary:
-    "본 약관은 노마다스(NomaDamas, 이하 '회사')가 제공하는 K-manus 데스크톱 AI 에이전트 애플리케이션 및 이와 연동되는 클라우드 서비스(이하 '서비스')의 이용 조건을 정합니다. 본 문서는 초안이며 법무 검토 전까지는 최종 약관으로 사용할 수 없습니다.",
+    "본 약관은 노마다스(NomaDamas, 이하 '회사')가 제공하는 돌쇠 데스크톱 AI 에이전트 애플리케이션 및 이와 연동되는 클라우드 서비스(이하 '서비스')의 이용 조건을 정합니다. 본 문서는 초안이며 법무 검토 전까지는 최종 약관으로 사용할 수 없습니다.",
   clauses: [
     {
       id: "purpose",
@@ -37,8 +37,8 @@ export const termsOfService: LegalDocumentContent = {
         "서비스는 다음 두 구성 요소로 이루어집니다.",
       ],
       list: [
-        "데스크톱 에이전트 애플리케이션: 이용자의 로컬 컴퓨터에 설치되어 실행되는 AI 에이전트 클라이언트(k-manus 데스크톱 앱)로, 로컬 데몬(agentd)을 통해 스킬 실행, 브라우저 자동화, 문서 작업 등을 수행합니다.",
-        "클라우드 서비스: 계정, 구독/결제, 모델 라우팅, 원격 워크스테이션 프로비저닝 등 회사가 서버 측에서 운영하는 부가 서비스(K-manus Cloud)로, 데스크톱 앱과 연동되어 확장 기능을 제공합니다.",
+        "데스크톱 에이전트 애플리케이션: 이용자의 로컬 컴퓨터에 설치되어 실행되는 AI 에이전트 클라이언트(dolshoi 데스크톱 앱)로, 로컬 데몬(agentd)을 통해 스킬 실행, 브라우저 자동화, 문서 작업 등을 수행합니다.",
+        "클라우드 서비스: 계정, 구독/결제, 모델 라우팅, 원격 워크스테이션 프로비저닝 등 회사가 서버 측에서 운영하는 부가 서비스(돌쇠 Cloud)로, 데스크톱 앱과 연동되어 확장 기능을 제공합니다.",
         "회사는 서비스의 전부 또는 일부를 회사의 정책 및 운영상 필요에 따라 추가, 변경, 중단할 수 있으며, 이 경우 이용자에게 사전 고지합니다(단, 긴급한 보안 조치 등 부득이한 경우는 사후 고지할 수 있습니다).",
       ],
     },
@@ -101,9 +101,9 @@ export const termsOfService: LegalDocumentContent = {
         "서비스는 다음과 같은 오픈소스 구성요소를 포함하거나 이와 연동됩니다. 각 구성요소는 해당 프로젝트가 채택한 라이선스 조건에 따라 별도로 배포됩니다.",
       ],
       list: [
-        "k-manus-browseros: GNU Affero General Public License v3.0(AGPL-3.0) 하에 공개 배포되는 브라우저 자동화 사이드카 계층입니다. 회사가 클라우드 워크스테이션을 통해 원격으로 BrowserOS 기반 기능을 제공하는 경우, AGPL 제13조(네트워크 상호작용 조항)에 따라 해당 배포본의 소스코드를 이용자가 확인할 수 있도록 서비스 내 '소스 보기(Source)' 고지를 제공합니다.",
+        "dolshoi-browseros: GNU Affero General Public License v3.0(AGPL-3.0) 하에 공개 배포되는 브라우저 자동화 사이드카 계층입니다. 회사가 클라우드 워크스테이션을 통해 원격으로 BrowserOS 기반 기능을 제공하는 경우, AGPL 제13조(네트워크 상호작용 조항)에 따라 해당 배포본의 소스코드를 이용자가 확인할 수 있도록 서비스 내 '소스 보기(Source)' 고지를 제공합니다.",
         "k-skill: 커뮤니티에 공개된 오픈 스킬(ToolPack) 생태계로, 각 스킬은 해당 스킬 저장소가 명시한 라이선스를 따릅니다. 회사는 스킬 실행 결과에 대해 스킬 개발자가 아닌 회사의 책임 범위 내에서만 책임을 집니다.",
-        "k-manus-protocol: Apache License 2.0 하에 공개되는 에이전트-툴 통신 프로토콜 정의입니다.",
+        "dolshoi-protocol: Apache License 2.0 하에 공개되는 에이전트-툴 통신 프로토콜 정의입니다.",
         "기타 서비스에 포함된 오픈소스 라이브러리의 상세 목록 및 라이선스 전문은 데스크톱 애플리케이션 내 '오픈소스 라이선스 고지' 화면 또는 회사가 운영하는 공개 저장소에서 확인할 수 있습니다.",
       ],
     },

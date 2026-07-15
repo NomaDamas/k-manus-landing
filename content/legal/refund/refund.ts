@@ -1,7 +1,7 @@
 import type { LegalDocumentContent } from "@/components/legal/LegalDocument";
 
 /**
- * K-manus Refund Policy (draft) -- Korean e-commerce law (전자상거래 등에서의
+ * 돌쇠 Refund Policy (draft) -- Korean e-commerce law (전자상거래 등에서의
  * 소비자보호에 관한 법률, "전자상거래법") aware, covering both subscription
  * (정기결제) plans and K-credit purchases.
  *
@@ -10,13 +10,13 @@ import type { LegalDocumentContent } from "@/components/legal/LegalDocument";
  * licensed Korean attorney signs off (see `status: "draft"` below, which
  * drives the banner rendered by `LegalDocument`).
  *
- * Source: K-manus preparation plan pending-approval.md section 7, item
+ * Source: 돌쇠 preparation plan pending-approval.md section 7, item
  * "[docs] Refund policy draft" (issue #5). Reuses the shared `LegalDocument`
  * rendering contract introduced by issue #3 (terms of service) so all legal
  * pages (#3-#7) look and behave the same way.
  *
  * This copy must stay consistent with the actual billing implementation in
- * k-manus-cloud (see that repo's issue #10, "Invoice and refund/cancellation
+ * dolshoi-cloud (see that repo's issue #10, "Invoice and refund/cancellation
  * flow"), specifically:
  * - Refunds are executed through the `PaymentProvider.refund()` seam
  *   (`packages/payment-adapters/{portone,stripe}`), which supports partial
@@ -35,21 +35,21 @@ import type { LegalDocumentContent } from "@/components/legal/LegalDocument";
  *   subscription logic to match.
  */
 export const refundPolicy: LegalDocumentContent = {
-  title: "K-manus 환불정책",
+  title: "돌쇠 환불정책",
   documentId: "refund-policy",
   version: "0.1.0-draft",
   effectiveDate: "미정 (법무 검토 후 확정)",
   lastUpdated: "2026-07-06",
   status: "draft",
   summary:
-    "노마다스(NomaDamas, 이하 '회사')는 「전자상거래 등에서의 소비자보호에 관한 법률」(이하 '전자상거래법') 등 관계 법령에 따라 K-manus 구독형 서비스 및 K-크레딧 구매에 대한 청약철회, 환불, 정기결제 해지 기준과 절차를 이 환불정책에서 안내합니다. 본 문서는 초안이며 법무 검토 전까지는 최종 정책으로 사용할 수 없습니다.",
+    "노마다스(NomaDamas, 이하 '회사')는 「전자상거래 등에서의 소비자보호에 관한 법률」(이하 '전자상거래법') 등 관계 법령에 따라 돌쇠 구독형 서비스 및 K-크레딧 구매에 대한 청약철회, 환불, 정기결제 해지 기준과 절차를 이 환불정책에서 안내합니다. 본 문서는 초안이며 법무 검토 전까지는 최종 정책으로 사용할 수 없습니다.",
   clauses: [
     {
       id: "purpose",
       title: "목적",
       paragraphs: [
-        "이 환불정책은 이용자가 K-manus 구독 플랜(정기결제) 및 K-크레딧을 유상으로 구매한 경우, 청약철회·해지·환불의 조건, 절차, 처리 기간을 명확히 하여 이용자의 권익을 보호하고 회사와 이용자 간의 분쟁을 예방하는 것을 목적으로 합니다.",
-        "이 정책은 K-manus 이용약관 및 개인정보처리방침과 함께 적용되며, 전자상거래법, 「콘텐츠산업 진흥법」, 「할부거래에 관한 법률」 등 관계 법령이 이 정책보다 이용자에게 유리하게 정하고 있는 경우에는 관계 법령이 우선합니다.",
+        "이 환불정책은 이용자가 돌쇠 구독 플랜(정기결제) 및 K-크레딧을 유상으로 구매한 경우, 청약철회·해지·환불의 조건, 절차, 처리 기간을 명확히 하여 이용자의 권익을 보호하고 회사와 이용자 간의 분쟁을 예방하는 것을 목적으로 합니다.",
+        "이 정책은 돌쇠 이용약관 및 개인정보처리방침과 함께 적용되며, 전자상거래법, 「콘텐츠산업 진흥법」, 「할부거래에 관한 법률」 등 관계 법령이 이 정책보다 이용자에게 유리하게 정하고 있는 경우에는 관계 법령이 우선합니다.",
       ],
     },
     {
@@ -72,10 +72,10 @@ export const refundPolicy: LegalDocumentContent = {
         "다만 전자상거래법 제17조 제2항에 따라 다음 각 호에 해당하는 경우에는 청약철회가 제한될 수 있습니다.",
       ],
       list: [
-        "이용자가 구독 서비스 이용을 개시하였거나 K-크레딧의 전부 또는 일부를 이미 소비하는 등, 용역의 제공이 개시된 경우로서 그 개시에 대해 이용자가 사전에 동의한 경우 (K-manus는 결제 시 '구매 즉시 서비스/크레딧 이용이 개시될 수 있으며, 이 경우 청약철회가 제한될 수 있음'에 대한 동의를 받습니다).",
+        "이용자가 구독 서비스 이용을 개시하였거나 K-크레딧의 전부 또는 일부를 이미 소비하는 등, 용역의 제공이 개시된 경우로서 그 개시에 대해 이용자가 사전에 동의한 경우 (돌쇠는 결제 시 '구매 즉시 서비스/크레딧 이용이 개시될 수 있으며, 이 경우 청약철회가 제한될 수 있음'에 대한 동의를 받습니다).",
         "이용자의 책임 있는 사유로 재화등이 멸실되거나 훼손된 경우 (디지털 재화 특성상 해당 사항이 제한적으로만 적용됩니다).",
         "시간의 경과에 의하여 재판매가 곤란할 정도로 재화등의 가치가 현저히 감소한 경우.",
-        "복제가 가능한 재화등의 포장을 훼손한 경우 (다운로드형 소프트웨어 등에 한하며, K-manus 데스크톱 앱 자체는 무료 배포이므로 이 사유는 원칙적으로 K-크레딧/구독 결제에는 적용되지 않습니다).",
+        "복제가 가능한 재화등의 포장을 훼손한 경우 (다운로드형 소프트웨어 등에 한하며, 돌쇠 데스크톱 앱 자체는 무료 배포이므로 이 사유는 원칙적으로 K-크레딧/구독 결제에는 적용되지 않습니다).",
       ],
     },
     {
@@ -123,7 +123,7 @@ export const refundPolicy: LegalDocumentContent = {
       ],
       list: [
         "서비스 내 계정 설정 화면의 '구독 관리' 또는 '결제 내역' 메뉴에서 직접 해지·환불 요청.",
-        "고객센터 이메일(billing@k-manus.ai, placeholder — 사업자 정보 확정 후 갱신)로 주문번호(결제 식별자), 결제수단, 환불 사유를 기재하여 요청.",
+        "고객센터 이메일(billing@dolshoi.com, placeholder — 사업자 정보 확정 후 갱신)로 주문번호(결제 식별자), 결제수단, 환불 사유를 기재하여 요청.",
         "이용자가 결제 시 사용한 이메일 또는 계정과 환불 요청자의 신원이 일치하는지 확인하기 위해 회사는 본인 확인을 요청할 수 있습니다.",
       ],
     },

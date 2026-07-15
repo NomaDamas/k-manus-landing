@@ -1,10 +1,10 @@
 # PG Review Submission Bundle
 
-This directory is the working bundle used to prepare K-manus's payment
+This directory is the working bundle used to prepare Dolshoi's payment
 gateway (PG, 전자결제) onboarding review submission. It collects the
 checklist, supporting documents, and asset manifest a PG reviewer (e.g.
 PortOne / 이니시스 / 토스페이먼츠-class Korean PG, or Stripe for
-international rails) needs to approve K-manus for live payment processing.
+international rails) needs to approve Dolshoi for live payment processing.
 
 It does **not** replace the legal/marketing content itself — those documents
 live in `content/legal/`, `content/pricing/`, and `content/business-info/`
@@ -18,12 +18,12 @@ in-progress backlog items in this repo:
 
 | Page | Intended route | Tracking issue |
 | --- | --- | --- |
-| Landing (home) | `/` | [#1](https://github.com/NomaDamas/k-manus-landing/issues/1) |
-| Pricing | `/pricing` | [#2](https://github.com/NomaDamas/k-manus-landing/issues/2) |
-| Terms of Service | `/legal/terms` | [#3](https://github.com/NomaDamas/k-manus-landing/issues/3) |
-| Privacy Policy | `/legal/privacy` | [#4](https://github.com/NomaDamas/k-manus-landing/issues/4) |
-| Refund Policy | `/legal/refund` | [#5](https://github.com/NomaDamas/k-manus-landing/issues/5) |
-| Business Information | `/business-info` | [#6](https://github.com/NomaDamas/k-manus-landing/issues/6) |
+| Landing (home) | `/` | [#1](https://github.com/NomaDamas/dolshoi-landing/issues/1) |
+| Pricing | `/pricing` | [#2](https://github.com/NomaDamas/dolshoi-landing/issues/2) |
+| Terms of Service | `/legal/terms` | [#3](https://github.com/NomaDamas/dolshoi-landing/issues/3) |
+| Privacy Policy | `/legal/privacy` | [#4](https://github.com/NomaDamas/dolshoi-landing/issues/4) |
+| Refund Policy | `/legal/refund` | [#5](https://github.com/NomaDamas/dolshoi-landing/issues/5) |
+| Business Information | `/business-info` | [#6](https://github.com/NomaDamas/dolshoi-landing/issues/6) |
 
 The checklist and asset manifest below reference these routes as the
 **intended, canonical URLs** per the page map in the repo README. Until the
@@ -37,7 +37,7 @@ live and re-capture screenshots against production, not against this draft.
 The issue that tracks this bundle suggested either a generated document
 bundle or a live index page under `app/pg-review/`. At the time of writing,
 `app/` has no application framework scaffolded yet (no `package.json`, no
-build tooling — see [#1](https://github.com/NomaDamas/k-manus-landing/issues/1)
+build tooling — see [#1](https://github.com/NomaDamas/dolshoi-landing/issues/1)
 "Marketing landing page build," which is still open). Standing up a route
 before the app framework exists would mean inventing throwaway scaffolding
 disconnected from whatever the landing app eventually adopts.

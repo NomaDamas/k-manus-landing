@@ -1,14 +1,14 @@
 import type { LegalDocumentContent } from "@/components/legal/LegalDocument";
 
 /**
- * K-manus Privacy Policy (draft) -- Korean PIPA (개인정보보호법) aware.
+ * 돌쇠 Privacy Policy (draft) -- Korean PIPA (개인정보보호법) aware.
  *
  * 검토 필요 / DRAFT -- not legal advice. This content has not been reviewed
  * by counsel and must not be treated as a final, binding policy until a
  * licensed Korean attorney signs off (see `status: "draft"` below, which
  * drives the banner rendered by `LegalDocument`).
  *
- * Source: K-manus preparation plan pending-approval.md section 7, item
+ * Source: 돌쇠 preparation plan pending-approval.md section 7, item
  * "[docs] Privacy policy draft" (issue #4). Reuses the shared
  * `LegalDocument` rendering contract introduced by issue #3 (terms of
  * service) so all legal pages (#3-#7) look and behave the same way.
@@ -22,26 +22,26 @@ import type { LegalDocumentContent } from "@/components/legal/LegalDocument";
  *   data, not the content of agent tasks beyond what's required for billing
  *   and abuse prevention.
  * - Payments are processed by PortOne and Stripe as independent payment
- *   gateway (PG) processors; card data is not stored by K-manus.
+ *   gateway (PG) processors; card data is not stored by 돌쇠.
  * - The model router forwards prompts to third-party model providers only
  *   as needed to fulfill the user's request.
  */
 export const privacyPolicy: LegalDocumentContent = {
-  title: "K-manus 개인정보처리방침",
+  title: "돌쇠 개인정보처리방침",
   documentId: "privacy-policy",
   version: "0.1.0-draft",
   effectiveDate: "미정 (법무 검토 후 확정)",
   lastUpdated: "2026-07-06",
   status: "draft",
   summary:
-    "노마다스(NomaDamas, 이하 '회사')는 개인정보보호법 등 관계 법령을 준수하며, K-manus 데스크톱 애플리케이션 및 이와 연동되는 클라우드 서비스(이하 '서비스')를 이용하는 정보주체의 개인정보를 안전하게 처리하기 위하여 이 개인정보처리방침을 수립·공개합니다. 본 문서는 초안이며 법무 검토 전까지는 최종 방침으로 사용할 수 없습니다.",
+    "노마다스(NomaDamas, 이하 '회사')는 개인정보보호법 등 관계 법령을 준수하며, 돌쇠 데스크톱 애플리케이션 및 이와 연동되는 클라우드 서비스(이하 '서비스')를 이용하는 정보주체의 개인정보를 안전하게 처리하기 위하여 이 개인정보처리방침을 수립·공개합니다. 본 문서는 초안이며 법무 검토 전까지는 최종 방침으로 사용할 수 없습니다.",
   clauses: [
     {
       id: "overview",
       title: "총칙",
       paragraphs: [
         "회사는 「개인정보보호법」 제30조에 따라 정보주체의 개인정보를 보호하고 이와 관련한 고충을 신속하고 원활하게 처리할 수 있도록 하기 위하여 이 개인정보처리방침을 수립합니다.",
-        "이 방침은 회사가 제공하는 K-manus 데스크톱 에이전트 애플리케이션과 이에 연동되는 클라우드 서비스(계정, 구독/결제, 모델 라우팅, 원격 워크스테이션 등, 이하 'K-manus Cloud') 모두에 적용됩니다. 데스크톱 앱과 클라우드는 처리하는 개인정보의 범위가 다르므로, 각 절에서 이를 구분하여 설명합니다.",
+        "이 방침은 회사가 제공하는 돌쇠 데스크톱 에이전트 애플리케이션과 이에 연동되는 클라우드 서비스(계정, 구독/결제, 모델 라우팅, 원격 워크스테이션 등, 이하 '돌쇠 Cloud') 모두에 적용됩니다. 데스크톱 앱과 클라우드는 처리하는 개인정보의 범위가 다르므로, 각 절에서 이를 구분하여 설명합니다.",
       ],
     },
     {
@@ -63,7 +63,7 @@ export const privacyPolicy: LegalDocumentContent = {
       id: "not-collected",
       title: "수집하지 않는 정보 (로컬 우선 처리 원칙)",
       paragraphs: [
-        "K-manus는 '로컬 우선(local-first)' 설계 원칙에 따라 다음 정보는 원칙적으로 회사 서버로 전송·저장하지 않습니다.",
+        "돌쇠는 '로컬 우선(local-first)' 설계 원칙에 따라 다음 정보는 원칙적으로 회사 서버로 전송·저장하지 않습니다.",
       ],
       list: [
         "시크릿/자격증명 원문: 이용자가 Vault(자격증명 보관소)에 등록한 API 키, 비밀번호, 토큰 등 시크릿의 실제 값은 이용자의 로컬 기기(OS 키체인 또는 로컬 Vault 백엔드)에만 저장됩니다. 회사 서버는 시크릿이 '존재한다'는 참조 정보(예: 어떤 이름의 자격증명이 등록되어 있는지)만 필요한 범위에서 인지할 수 있으며, 시크릿 값 자체를 전송받거나 로그에 남기지 않습니다.",
@@ -131,7 +131,7 @@ export const privacyPolicy: LegalDocumentContent = {
       id: "vault-and-local-secrets",
       title: "시크릿·자격증명(Vault) 처리에 관한 특별 조항",
       paragraphs: [
-        "K-manus 데스크톱 앱은 이용자가 에이전트 스킬 실행을 위해 등록하는 API 키, 비밀번호, 토큰 등의 자격증명을 Vault 브로커를 통해 관리합니다. Vault는 자격증명 값을 이용자의 로컬 OS 키체인(예: macOS Keychain) 또는 로컬 Vault 백엔드에 암호화하여 저장하며, 회사의 클라우드 서버로 전송하지 않습니다.",
+        "돌쇠 데스크톱 앱은 이용자가 에이전트 스킬 실행을 위해 등록하는 API 키, 비밀번호, 토큰 등의 자격증명을 Vault 브로커를 통해 관리합니다. Vault는 자격증명 값을 이용자의 로컬 OS 키체인(예: macOS Keychain) 또는 로컬 Vault 백엔드에 암호화하여 저장하며, 회사의 클라우드 서버로 전송하지 않습니다.",
         "에이전트가 스킬 실행 과정에서 자격증명을 사용해야 하는 경우, FillPolicy(자동 채움 정책) 및 승인 게이트를 통해 이용자가 사전에 허용한 범위 내에서만 로컬 프로세스 간에 자격증명이 전달되며, 이 값은 로그나 원격 서버로 유출되지 않도록 설계되어 있습니다.",
         "이용자는 언제든지 로컬 Vault UI를 통해 등록된 자격증명 목록을 확인, 수정, 삭제할 수 있습니다.",
       ],
@@ -186,10 +186,10 @@ export const privacyPolicy: LegalDocumentContent = {
       id: "cookies",
       title: "쿠키(Cookie)의 운영 및 거부",
       paragraphs: [
-        "회사는 랜딩 페이지 및 K-manus Cloud 웹 콘솔 이용 시 이용자에게 최적화된 서비스를 제공하기 위하여 이용 정보를 저장하고 수시로 불러오는 '쿠키(cookie)'를 사용할 수 있습니다.",
+        "회사는 랜딩 페이지 및 돌쇠 Cloud 웹 콘솔 이용 시 이용자에게 최적화된 서비스를 제공하기 위하여 이용 정보를 저장하고 수시로 불러오는 '쿠키(cookie)'를 사용할 수 있습니다.",
         "쿠키는 웹사이트를 운영하는데 이용되는 서버가 이용자의 브라우저에 보내는 소량의 정보이며 이용자들의 컴퓨터 내의 하드디스크에 저장되기도 합니다. 회사는 다음과 같은 목적을 위해 쿠키를 사용합니다: 로그인 상태 유지, 이용자의 접속 빈도나 방문 시간 등을 분석하여 이용자의 서비스 이용에 대한 통계적 분석 및 이에 따른 맞춤형 서비스 제공.",
         "이용자는 쿠키 설치에 대한 선택권을 가지고 있으며, 웹브라우저에서 옵션을 설정함으로써 모든 쿠키를 허용하거나, 쿠키가 저장될 때마다 확인을 거치거나, 모든 쿠키의 저장을 거부할 수도 있습니다. 다만 쿠키 저장을 거부할 경우 로그인이 필요한 일부 서비스 이용에 어려움이 있을 수 있습니다.",
-        "K-manus 데스크톱 앱 자체는 브라우저 쿠키가 아닌 로컬 앱 저장소(예: 테마 설정을 위한 로컬 스토리지)를 사용하며, 이는 회사 서버로 전송되지 않습니다.",
+        "돌쇠 데스크톱 앱 자체는 브라우저 쿠키가 아닌 로컬 앱 저장소(예: 테마 설정을 위한 로컬 스토리지)를 사용하며, 이는 회사 서버로 전송되지 않습니다.",
       ],
     },
     {
@@ -204,7 +204,7 @@ export const privacyPolicy: LegalDocumentContent = {
       title: "개인정보 보호책임자",
       paragraphs: [
         "회사는 개인정보 처리에 관한 업무를 총괄해서 책임지고, 개인정보 처리와 관련한 정보주체의 불만 처리 및 피해 구제 등을 위하여 아래와 같이 개인정보 보호책임자를 지정하고 있습니다.",
-        "개인정보 보호책임자: [성명 미정 -- 지정 후 기재] / 직책: [직책 미정] / 연락처(이메일): privacy@k-manus.ai (placeholder, 사업자 정보 확정 후 갱신) / 연락처(전화): [번호 미정]",
+        "개인정보 보호책임자: [성명 미정 -- 지정 후 기재] / 직책: [직책 미정] / 연락처(이메일): privacy@dolshoi.com (placeholder, 사업자 정보 확정 후 갱신) / 연락처(전화): [번호 미정]",
         "정보주체는 회사의 서비스를 이용하시면서 발생한 모든 개인정보 보호 관련 문의, 불만처리, 피해구제 등에 관한 사항을 개인정보 보호책임자에게 문의하실 수 있습니다. 회사는 정보주체의 문의에 대해 지체 없이 답변 및 처리해드릴 것입니다.",
         "본 항목은 사업자 정보(issue #6, /business-info)가 확정되는 대로 실제 성명·직책·연락처로 갱신되어야 하는 자리표시자(placeholder)입니다.",
       ],

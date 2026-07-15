@@ -2,7 +2,7 @@
  * Pricing page plan data.
  *
  * Conceptually mirrors the four-tier plan catalog defined in
- * `k-manus-cloud/packages/subscription/src/plans.ts` (`PLAN_CATALOG`):
+ * `dolshoi-cloud/packages/subscription/src/plans.ts` (`PLAN_CATALOG`):
  * plan ids/names/ordering, monthly K-credit grants, and feature flags
  * (`concurrentWorkstations`, `priorityRouting`, `seatLimit`, `teamAdmin`)
  * are kept in lockstep with that source of truth so this repo never drifts
@@ -97,7 +97,7 @@ export const PRICING_PLANS: PricingPlan[] = [
     seatLimit: 10,
     teamAdmin: true,
     ctaLabel: "영업팀에 문의",
-    ctaHref: "mailto:sales@k-manus.ai",
+    ctaHref: "mailto:sales@dolshoi.com",
   },
 ];
 

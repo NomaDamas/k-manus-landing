@@ -1,7 +1,7 @@
 import type { Metadata, Viewport } from "next";
 // Pretendard Variable is bundled locally via the `pretendard` package (no
 // runtime CDN fetch) -- mirrors apps/desktop/src/main.tsx in the main
-// k-manus repo so the two surfaces stay visually identical.
+// dolshoi repo so the two surfaces stay visually identical.
 import "pretendard/dist/web/variable/pretendardvariable.css";
 import "./globals.css";
 import { Header } from "@/components/Header";
@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   },
   description: siteConfig.description,
   keywords: [
-    "K-manus",
+    "Dolshoi",
     "AI 에이전트",
     "데스크톱 AI",
     "브라우저 자동화",

@@ -5,7 +5,7 @@ page and the mandatory footer disclosure (`components/Footer.tsx`). Every
 field below is currently a **structural placeholder**, not real registered
 information, because NomaDamas has not yet completed business registration
 (사업자등록) or mail-order-sales registration (통신판매업 신고) for the
-K-manus product line. Korean e-commerce law (전자상거래 등에서의
+돌쇠 product line. Korean e-commerce law (전자상거래 등에서의
 소비자보호에 관한 법률 및 관련 시행령) requires a 통신판매업자 to disclose
 accurate registered business identity and contact information on every page
 before offering goods/services for payment — **do not accept real payments
@@ -30,7 +30,7 @@ until every item in this list is resolved.**
 
 | Field | Where it appears | Notes |
 | --- | --- | --- |
-| 고객센터 이메일 (`support@k-manus.ai`) | `/business-info` support section | Confirm mailbox is live; decide whether billing inquiries route here or to the `billing@k-manus.ai` address referenced in the refund policy (issue #5) — keep consistent. |
+| 고객센터 이메일 (`support@dolshoi.com`) | `/business-info` support section | Confirm mailbox is live; decide whether billing inquiries route here or to the `billing@dolshoi.com` address referenced in the refund policy (issue #5) — keep consistent. |
 | 온라인 문의 폼 | `/business-info` support section | Currently shows "준비 중" with no link. Add the real URL once a support-form page/tool exists; do not link a placeholder URL. |
 | 고객센터 전화번호 | `/business-info` support section | Only needed if phone support will actually be staffed. |
 | 운영 시간 (`support.hours`) | `/business-info` support section | Replace with the operator's actual staffed hours. |
@@ -48,3 +48,18 @@ until every item in this list is resolved.**
    `"final"` to remove the placeholder banner on `/business-info`.
 3. Re-run `pnpm build` and `pnpm lint` and visually check `/business-info`
    and the footer on at least one other page before deploying.
+
+
+## Domain decision
+
+Canonical product domain is **`dolshoi.com`** (구매 완료, 2026-07).
+
+| Surface | Host |
+| --- | --- |
+| Marketing / landing | `https://dolshoi.com` |
+| SaaS web app | `https://app.dolshoi.com` |
+| Public API | `https://api.dolshoi.com` |
+| Managed model proxy | `https://proxy.dolshoi.com` |
+| k-skill proxy | `https://k-skill-proxy.dolshoi.com` |
+
+Email mailboxes (`contact@`, `privacy@`, `support@`, `billing@`) still need to be provisioned on this domain; values remain placeholders until the mailboxes are live.

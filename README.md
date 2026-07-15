@@ -1,9 +1,9 @@
-# k-manus-landing
+# dolshoi-landing
 
-Public landing and legal repository for **K-manus** (NomaDamas).
+Public landing and legal repository for **Dolshoi** (NomaDamas).
 
 This repository holds the marketing, legal, business-information, pricing, and
-payment-gateway review assets for the K-manus product line. It is the source of
+payment-gateway review assets for the Dolshoi product line. It is the source of
 truth for customer-facing text and legal documents consumed by the landing page
 application.
 
@@ -25,7 +25,7 @@ application.
 ## Page Map
 
 ```
-k-manus-landing
+dolshoi-landing
 ├── Landing (home)            -> app/page.tsx
 ├── Pricing                   -> content/pricing/        (rendered by app/pricing/)
 ├── Terms of Service          -> content/legal/terms/     (rendered by app/legal/terms/, issue #3)
@@ -44,8 +44,8 @@ The home page (`app/page.tsx`) owns the design system every other route should
 reuse:
 
 - **Tokens**: `app/tokens.css` (imported once from `app/globals.css`, which
-  the root layout loads). Mirrors the K-manus brand tokens in the main
-  `k-manus` repo's `apps/desktop/src/styles/tokens.css` (ink/jjok/dan/cheongja
+  the root layout loads). Mirrors the Dolshoi brand tokens in the main
+  `dolshoi` repo's `apps/desktop/src/styles/tokens.css` (ink/jjok/dan/cheongja
   accents, light/dark) as CSS custom properties on `:root` — no `[data-km]`
   scoping needed here since this site has no app shell. New pages should read
   `var(--acc)`, `var(--text)`, `var(--sub)`, `var(--surface)`, `var(--line)`,
@@ -80,7 +80,7 @@ pnpm build    # static export to out/ (next.config.ts sets output: "export")
 pricing page: Free / Personal / Pro / Team plan cards, a monthly/annual
 billing toggle, a feature comparison table, and an FAQ. Plan data lives in
 `lib/pricing-plans.ts` and is kept conceptually aligned with the plan catalog
-in `k-manus-cloud/packages/subscription/src/plans.ts` (plan ids, K-credit
+in `dolshoi-cloud/packages/subscription/src/plans.ts` (plan ids, K-credit
 grants, feature flags). KRW prices are placeholder example values only —
 clearly labeled as such in the UI — pending a finalized PortOne/Stripe price
 list.

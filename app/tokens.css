@@ -1,8 +1,8 @@
 /**
- * K-manus landing design tokens.
+ * Dolshoi landing design tokens.
  *
  * Mirrors the token set defined in `apps/desktop/src/styles/tokens.css` of the
- * main k-manus repo, adapted for a public marketing/legal site: tokens live
+ * main dolshoi repo, adapted for a public marketing/legal site: tokens live
  * on `:root` (not scoped to a `[data-km]` app shell), and the accent is fixed
  * to "jjok" (쪽빛 blue), the brand's primary public-facing accent. Theme
  * still follows the visitor's OS preference, with a manual override via

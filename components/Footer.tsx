@@ -59,7 +59,7 @@ export function Footer() {
       <Container className={styles.inner}>
         <div className={styles.columns}>
           <div className={styles.brandCol}>
-            <span className={styles.wordmark}>K-manus</span>
+            <span className={styles.wordmark}>Dolshoi</span>
             <p className={styles.blurb}>
               당신의 컴퓨터에서, 당신을 대신해 일하는 한국어 우선 데스크톱 AI
               에이전트 슈퍼앱.

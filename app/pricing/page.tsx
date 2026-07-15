@@ -9,7 +9,7 @@ import styles from "./pricing.module.css";
 
 const title = "요금제";
 const description =
-  "K-manus의 Free, Personal, Pro, Team 요금제를 비교하세요. 매월 지급되는 K-크레딧, 동시 클라우드 워크스테이션, 우선 처리, 팀 관리 기능을 한눈에 확인할 수 있습니다.";
+  "Dolshoi의 Free, Personal, Pro, Team 요금제를 비교하세요. 매월 지급되는 K-크레딧, 동시 클라우드 워크스테이션, 우선 처리, 팀 관리 기능을 한눈에 확인할 수 있습니다.";
 
 export const metadata: Metadata = {
   title,
@@ -74,7 +74,7 @@ export default function PricingPage() {
       <section aria-labelledby="cta-heading" className={styles.ctaSection}>
         <Container className={styles.ctaInner}>
           <h2 id="cta-heading" className={styles.ctaTitle}>
-            지금 바로 K-manus를 시작해 보세요
+            지금 바로 Dolshoi를 시작해 보세요
           </h2>
           <p className={styles.ctaSubtitle}>
             Free 요금제는 신용카드 없이 바로 시작할 수 있습니다. 팀 단위
@@ -84,7 +84,7 @@ export default function PricingPage() {
             <Link href="/#download" className={styles.ctaPrimary}>
               무료로 시작하기
             </Link>
-            <a href="mailto:sales@k-manus.ai" className={styles.ctaSecondary}>
+            <a href="mailto:sales@dolshoi.com" className={styles.ctaSecondary}>
               영업팀에 문의
             </a>
           </div>

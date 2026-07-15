@@ -12,7 +12,7 @@ const features: Feature[] = [
   {
     icon: "🧩",
     title: "k-skill 스킬 통합",
-    body: "엑셀 자동화, 문서 변환, 사내 도구 연동까지 — 필요한 스킬을 골라 붙이면 K-manus가 실행 계획을 세우고 직접 처리합니다.",
+    body: "엑셀 자동화, 문서 변환, 사내 도구 연동까지 — 필요한 스킬을 골라 붙이면 Dolshoi가 실행 계획을 세우고 직접 처리합니다.",
     accent: "jjok",
   },
   {

@@ -1,8 +1,8 @@
-# Agent Guide — k-manus-landing
+# Agent Guide — dolshoi-landing
 
 ## Repository Purpose
 
-`k-manus-landing` is the **public landing and legal repository** for the K-manus
+`dolshoi-landing` is the **public landing and legal repository** for the Dolshoi
 product line (NomaDamas). It hosts:
 
 - Marketing and product landing page content.
@@ -58,5 +58,5 @@ content/
   deliberately and ideally reviewed by a human before merge.
 - Placeholders (`.gitkeep`) mark intended directory structure — do not remove
   them unless the directory is being populated with real content.
-- This repo is for K-manus landing/legal preparation only. Application
+- This repo is for Dolshoi landing/legal preparation only. Application
   implementation lives in other repositories.

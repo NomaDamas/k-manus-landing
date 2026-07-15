@@ -4,8 +4,8 @@ import { useId, useState } from "react";
 import { Container } from "./Container";
 import styles from "./Cta.module.css";
 
-const DOWNLOAD_URL = "https://github.com/NomaDamas/k-manus/releases";
-const WAITLIST_EMAIL = "hello@k-manus.ai";
+const DOWNLOAD_URL = "https://github.com/NomaDamas/dolshoi/releases";
+const WAITLIST_EMAIL = "hello@dolshoi.com";
 
 export function Cta() {
   const [email, setEmail] = useState("");
@@ -16,7 +16,7 @@ export function Cta() {
     event.preventDefault();
     if (!email) return;
 
-    const subject = encodeURIComponent("K-manus 얼리 액세스 신청");
+    const subject = encodeURIComponent("Dolshoi 얼리 액세스 신청");
     const body = encodeURIComponent(
       `얼리 액세스 알림을 받고 싶습니다.\n연락받을 이메일: ${email}`,
     );
@@ -30,7 +30,7 @@ export function Cta() {
         <div className={styles.panel}>
           <div className={styles.copy}>
             <h2 id="cta-heading" className={styles.heading}>
-              K-manus를 가장 먼저 만나보세요
+              Dolshoi를 가장 먼저 만나보세요
             </h2>
             <p className={styles.sub}>
               데스크톱 앱을 지금 내려받거나, 정식 출시 알림을 신청해 새 기능과

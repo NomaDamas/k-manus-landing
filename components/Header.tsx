@@ -8,11 +8,11 @@ export function Header() {
   return (
     <header className={styles.header}>
       <Container className={styles.bar}>
-        <Link href="/" className={styles.brand} aria-label="K-manus 홈으로">
+        <Link href="/" className={styles.brand} aria-label="Dolshoi 홈으로">
           <span className={styles.mark} aria-hidden="true">
             K
           </span>
-          <span className={styles.wordmark}>K-manus</span>
+          <span className={styles.wordmark}>Dolshoi</span>
         </Link>
 
         <nav className={styles.nav} aria-label="주요 메뉴">

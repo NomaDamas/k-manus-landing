@@ -8,11 +8,11 @@
  */
 
 export const siteConfig = {
-  name: "K-manus",
+  name: "돌쇠",
   tagline: "당신의 컴퓨터에서, 당신을 대신해 일하는 AI 에이전트",
   description:
-    "K-manus는 한국어 우선 데스크톱 AI 에이전트 슈퍼앱입니다. 채팅으로 지시하면 스킬 실행, 브라우저 자동화, 문서 작업까지 승인 게이트로 안전하게 대신 처리합니다.",
-  url: "https://k-manus.ai",
+    "돌쇠는 한국어 우선 데스크톱 AI 에이전트 슈퍼앱입니다. 채팅으로 지시하면 스킬 실행, 브라우저 자동화, 문서 작업까지 승인 게이트로 안전하게 대신 처리합니다.",
+  url: "https://dolshoi.com",
 } as const;
 
 export type NavLink = {

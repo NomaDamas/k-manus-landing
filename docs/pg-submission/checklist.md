@@ -1,6 +1,6 @@
 # PG Review Submission Checklist
 
-Master checklist for K-manus's payment gateway onboarding review. Check off
+Master checklist for Dolshoi's payment gateway onboarding review. Check off
 each item only after verifying it against the **live** site — screenshots
 must be recaptured at submission time, not reused from earlier drafts.
 
@@ -42,7 +42,7 @@ See [`site-disclosures.md`](./site-disclosures.md) for the itemized list
 
 ## 4. Product & payment flow description
 
-- [ ] Product description: what K-manus is, who buys it, and what a paid
+- [ ] Product description: what Dolshoi is, who buys it, and what a paid
       subscription unlocks (desktop agent app + optional cloud workstation
       credits). Summarized in [`payment-flow.md`](./payment-flow.md).
 - [ ] Payment flow narrative + diagram: checkout → authorization → webhook
